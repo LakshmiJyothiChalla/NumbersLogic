@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<body>
+<script>
+  var UserNumber=Number(prompt("Enter Any Number to know prime number"));
+ 
+  for (var i=1;i<=UserNumber;i++)
+  {
+	primenumber(i);
+  }
+  function primenumber(UserNumber)
+  {
+	  let count=0;
+	  if(UserNumber==1)
+	  {
+		//document.write(UserNumber+" is not a prime number");
+	  }
+	  else
+	  {
+	  for(var i=2;i<=UserNumber;i++)
+	  {
+		if(UserNumber%i==0)
+		{
+			count=count+1;
+		}
+		else
+		{
+			count=count;
+		}
+	  }
+		if(count>=2)
+		{
+			//document.write(UserNumber+" is not a prime number");
+		}
+		else
+		{
+			document.write(UserNumber+"<br>");
+		
+		}
+	  }
+  }
+</script>
+</body>
+</html>

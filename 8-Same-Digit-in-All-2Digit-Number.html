@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<body>
+<script>
+  var UserNumber=Number(prompt("Enter Any Number to get 2 digit numbers having that number"));
+  for(var i=1;i<100;i++)
+  {
+    const rem1=i%10;  //okato sthaanam loo unna number
+	const rem10=Math.floor((i/10)); //padhula sthanam loo unna number
+	if(rem1==UserNumber || rem10==UserNumber)
+	{
+	document.write(i+"<br>");
+	}
+  } 
+
+</script>
+</body>
+</html>
